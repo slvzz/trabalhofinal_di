@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  overflow-x: hidden; 
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .product {
+    flex: 1 1 calc(50% - 1rem); 
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 575px) {
+  .product {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .text-section p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .product {
+    flex: 1 1 calc(50% - 1rem); 
+    max-width: calc(50% - 1rem);
+  }
+
+  .about .text-section h2 {
+    font-size: 1.5rem; 
+  }
+
+  .about p {
+    font-size: 0.875rem; 
+  }
+
+  .table-section .styled-table {
+    font-size: 0.875rem;
+  }
+
+  .table-section .styled-table th, .table-section .styled-table td {
+    padding: 0.5rem; 
+  }
+}
+
+@media (max-width: 575px) {
+  .product {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .text-section p {
+    font-size: 0.75rem; 
+  }
+
+  .table-section .styled-table {
+    font-size: 0.75rem; 
+  }
+
+  .table-section .styled-table th, .table-section .styled-table td {
+    padding: 0.25rem; 
+  }
+
+  .about .fachada {
+    display: none; 
+  }
+}
+
